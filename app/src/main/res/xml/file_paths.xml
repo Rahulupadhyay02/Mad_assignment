@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- External storage path -->
+    <external-path
+        name="external_files"
+        path="." />
+    
+    <!-- App-specific external storage -->
+    <external-files-path
+        name="external_files"
+        path="." />
+    
+    <!-- App-specific internal storage -->
+    <files-path
+        name="files"
+        path="." />
+    
+    <!-- App cache -->
+    <cache-path
+        name="cache"
+        path="." />
+    
+    <!-- External app-specific cache -->
+    <external-cache-path
+        name="external_cache"
+        path="." />
+    
+    <!-- Root path for Android 11+ -->
+    <root-path
+        name="root"
+        path="." />
+</paths> 
