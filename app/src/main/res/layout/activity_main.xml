@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:contentPadding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/length_converter"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="?android:attr/textColorPrimary"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Conversion Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:weightSum="11">
+
+            <!-- First Unit Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="?attr/colorSurface"
+                app:contentPadding="8dp">
+
+                <!-- Input Value Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/inputValue1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="end"
+                            android:textSize="28sp"
+                            android:inputType="numberDecimal"
+                            android:autofillHints="0"
+                            android:importantForAutofill="yes"
+                            android:minHeight="48dp"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:hint="@string/enter_value"
+                            android:textColorHint="?android:attr/textColorHint"
+                            android:contentDescription="@string/enter_value"
+                            tools:ignore="TextContrastCheck"/>
+
+                        <TextView
+                            android:id="@+id/unitDisplay1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meters_symbol"
+                            android:textSize="20sp"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/unit_symbol"/>
+                    </LinearLayout>
+
+                    <!-- Unit Selector -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/from_unit"
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        app:hintTextColor="?attr/colorPrimary"
+                        app:boxStrokeWidth="1dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/unit1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textSize="16sp"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:contentDescription="@string/from_unit"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Equals Sign -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equals_symbol"
+                    android:textSize="28sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:contentDescription="@string/equals"/>
+            </LinearLayout>
+
+            <!-- Second Unit Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="?attr/colorSurface"
+                app:contentPadding="8dp">
+
+                <!-- Output Value Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/inputValue2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="end"
+                            android:textSize="28sp"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:minHeight="48dp"
+                            android:contentDescription="@string/converted_value"/>
+
+                        <TextView
+                            android:id="@+id/unitDisplay2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/centimeters_symbol"
+                            android:textSize="20sp"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/unit_symbol"/>
+                    </LinearLayout>
+
+                    <!-- Unit Selector -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/to_unit"
+                        app:boxStrokeColor="?attr/colorPrimary"
+                        app:hintTextColor="?attr/colorPrimary"
+                        app:boxStrokeWidth="1dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/unit2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textSize="16sp"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:contentDescription="@string/to_unit"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
