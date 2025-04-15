@@ -2,7 +2,10 @@
 
 # Q1) Develop a simple Unit Convertor Android application to convert the following five length measurements - Feet, Inches, Centimeters, Meters and Yards to each other. The UX/functionality can be similar to the Google Search Unit Convertor.
 
+
+
 # Q2) For the Unit Convertor application above, implement a Settings page where you can change the Theme of the app from Light to Dark and vice versa.
+
 
 # Q3) Develop a simple Android application to play a Lottie Animation. Free Lottie animations can be found online on websites like https://lottiefiles.com/featured-free-animations
 
