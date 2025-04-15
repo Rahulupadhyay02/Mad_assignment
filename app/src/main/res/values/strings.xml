@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="length_converter">Length Converter</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="converted_value">Converted Value</string>
+    <string name="select_unit">Select Unit</string>
+    <string name="equals_symbol">=</string>
+    <string name="equals">equals</string>
+    <string name="meters_symbol">m</string>
+    <string name="centimeters_symbol">cm</string>
+    <string name="unit_symbol">unit symbol</string>
+    <string name="from_unit">from unit</string>
+    <string name="to_unit">to unit</string>
+</resources>
