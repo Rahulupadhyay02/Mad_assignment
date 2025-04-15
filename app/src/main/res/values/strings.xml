@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Google Sign In App</string>
+    <string name="welcome_message">Welcome to Google Sign In</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="logout">Logout</string>
+    <string name="login_success">Login Successful</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="logout_success">Logged out successfully</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+</resources>
